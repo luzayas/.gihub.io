@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet"  href="style.css">
-    <link rel="icon"        href="src/logos/icon.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap" rel="stylesheet">
-    <title>mujerest</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap" rel="stylesheet">
+     
+    
+
+    <title>Knockin' Boots Home Page </title>
 </head>
 <body>
     <header>
@@ -21,15 +23,15 @@
             </div>
         </nav>
     </header>
-    
+   
+
     <div id="menu">
         <iconify-icon id="boton-menu" icon="pepicons-print:menu" width="32" height="32"></iconify-icon>
     </div>
     
     <div id="menu-desplegable">
-        <a href="index.html">   <h1 class="opciones" id="inicio">  Inicio    </h1></a>
-        <h1 class="opciones" id="catalogo">Catálogo </h1>
-        
+        <a href="index.html">   <h1 class="opciones" id="inicio">  Inicio     </h1></a>
+        <h1 class="opciones" id="catalogo">Catálogo</h1>
             <h1 class="opciones">Nosotros</h1>
     </div>
 
@@ -38,51 +40,43 @@
         <div class="opcionesCatalogo" id="mujeres"> <a href="catalogo-mujeres.html"> <h2>Mujeres </h2> </a> </div>
     </div>
 
+    <section id="hero-index">
+    
+        <input type="radio" name="botones" id="btn1">
+        <input type="radio" name="botones" id="btn2">
+        <input type="radio" name="botones" id="btn3">
+        <input type="radio" name="botones" id="btn4">
 
-    <section id="hero-mujeres">
-        <div class="container-catalogo">
-            <div id="catalogo-mujeres">
-                <div class="card">
-                    <img class="imagen-catalogo" src="src/catalogo/mujer/1.png" alt="Zapato mujer">
-                    <div class="precio-catalogo">
-                        $14.000
-                    </div>
+        <div class="container-slider">
+            <div id="slider" class="slider">
+                <div class="slider__section">
+                    <img src="src/catalogo/hombre/1.png" class="slider__img" id="img1" alt="zapatos 1">
                 </div>
-                <div class="card">
-                    <img class="imagen-catalogo" src="src/catalogo/mujer/2.png" alt="Zapato mujer">
-                    <div class="precio-catalogo">
-                        $18.200
-                    </div>
+                <div class="slider__section">
+                    <img src="src/catalogo/Mujer/2.png" class="slider__img" id="img2" alt="zapatos 2">
                 </div>
-                        <div class="card">
-                            <img class="imagen-catalogo" src="src/catalogo/mujer/3.png" alt="Zapato mujer">
-                            <div class="precio-catalogo">
-                                $17.000
-                            </div>
-                    </div>
-                    <div class="card">
-                        <img class="imagen-catalogo" src="src/catalogo/mujer/4.png" alt="Zapato mujer">
-                        <div class="precio-catalogo">
-                                $20.000
-                            </div>
-                        </div>
-                    <div class="card">
-                    <img class="imagen-catalogo" src="src/catalogo/mujer/5.png" alt="Zapato mujer">
-                        <div class="precio-catalogo">
-                                $22.000
-                            </div>
-                    </div>
-                    <div class="card">
-                        <img class="imagen-catalogo" src="src/catalogo/mujer/6.png" alt="Zapato mujer">
-                            <div class="precio-catalogo">
-                                $15.000
-                            </div>
-                        </div>
-                    </div>
+                <div class="slider__section">
+                    <img src="src/catalogo/hombre/5.png" class="slider__img" id="img3" alt="zapatos 3">
+                </div>
+                <div class="slider__section">
+                    <img src="src/catalogo/mujer/6.png" class="slider__img" id="img4" alt="zapatos 4">
                 </div>
             </div>
+        
+            <div class="slider__btn slider__btn-right"><div class="text">&#62;</div></div>
+            <div class="slider__btn slider__btn-left"><div class="text">&#60;</div></div>
+            
+            <div class="controles">
+                <label for="btn1"></label>
+                <label for="btn2"></label>
+                <label for="btn3"></label>
+                <label for="btn4"></label>
+                
+            </div>
         </div>
+    
     </section>
+
     <footer>
         <div class="redes">
             <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer">
@@ -105,7 +99,8 @@
         </div>
     </footer>
    
-    <script src="script.js"></script>
+    <script src="script.js"></script>   
+    <script src="slider.js"></script>
     <script src="catalogo.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
